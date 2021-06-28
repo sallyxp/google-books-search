@@ -4,7 +4,6 @@
   "description": "Google Books Search",
   "main": "server.js",
   "scripts": {
-   
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
@@ -12,8 +11,6 @@
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
-    
-
   },
   "author": "",
   "license": "ISC",
