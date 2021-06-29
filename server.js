@@ -18,13 +18,13 @@ if (process.env.NODE_ENV === "production") {
 // Define API routes
 app.use(routes);
 
-// wildcard handler for all pages
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/public/index.html"));
-});
+// // wildcard handler for all pages
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "./client/public/index.html"));
+// });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/google_book_search", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
@@ -39,10 +39,10 @@ mongoose.connection.on('error', (err) => console.log(`Mongoose default connectio
 // Define API routes
 app.use(routes);
 
-// Send every other request to the React app
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// // Send every other request to the React app
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./client/public/index.html"));
+// });
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
