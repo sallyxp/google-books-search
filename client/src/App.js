@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 
 
-import './App.css';
+
 
 function App() {
   return (

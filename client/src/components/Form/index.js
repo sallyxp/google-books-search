@@ -31,3 +31,4 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
         </form>
     );
 }
+export default Form;
