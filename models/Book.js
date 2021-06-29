@@ -6,21 +6,29 @@ const bookSchema = new Schema({
         type: String,
         required: true 
     }, 
+    subtitle: {
+        type: String,
+    },
     authors: {
         type: String, 
         required: true
     },
+    link: {
+        type: String,
+        required: false
+    },
    description: {
        type: String, 
        required: true
-   } ,
+   },
    image: {
        type: String, 
        required: false
    },
-   link: {
+   googleId: {
        type: String, 
-       required: false
+       required: true, 
+       unique: true
    }
 
 });
