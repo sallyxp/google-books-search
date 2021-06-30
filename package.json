@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Google Books Search",
   "main": "server.js",
+
+  "engines": {
+    "node": "11.1.0",
+    "npm": "6.14.10"
+  },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
