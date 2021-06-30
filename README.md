@@ -4,7 +4,7 @@ This respository creates a React-based Google Books search app.  React component
 This project has been created using MongoDB, Express, React and Node.  MERN.
 This is the link to the Heroku deployment:  
 
-https://dry-sea-03304.herokuapp.com/
+https://sallyxp-google-book-search.herokuapp.com/
 
 ## *Table of Contents*
 - [Description](#description)
