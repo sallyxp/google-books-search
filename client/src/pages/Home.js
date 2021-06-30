@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
+import Wrapper from "../components/Wrapper"
 
 
 class Home extends Component {
@@ -14,7 +15,7 @@ class Home extends Component {
     state = {
         books: [],
         q: "",
-        message: "Search for a book!"
+        message: "Search for a book to begin ..."
       };
     
       handleInputChange = event => {
@@ -34,7 +35,7 @@ class Home extends Component {
           .catch(() =>
             this.setState({
               books: [],
-              message: "No Books Found, Try a Different Query"
+              message: "No Books Found, Try another Query"
             })
           );
       };
@@ -60,14 +61,15 @@ class Home extends Component {
     
       render() {
         return (
+          <Wrapper>
           <Container>
             <Row>
               <Col size="md-12">
                 <Jumbotron>
                   <h1 className="text-center">
-                    <strong>(React) Google Books Search</strong>
+                    <strong>Google Books Search using React!</strong>
                   </h1>
-                  <h2 className="text-center">Search for and Save Books of Interest.</h2>
+                  <h2 className="text-center">Search for any books and save your favourites!!</h2>
                 </Jumbotron>
               </Col>
               <Col size="md-12">
@@ -113,9 +115,11 @@ class Home extends Component {
             </Row>
             <Footer />
           </Container>
+          </Wrapper>
         );
       }
     }
+      
     
     export default Home;
 
