@@ -16,6 +16,7 @@ class Home extends Component {
         books: [],
         q: "",
         message: "Search for a book to begin ..."
+    
       };
     
       handleInputChange = event => {
