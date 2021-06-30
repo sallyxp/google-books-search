@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       <hr />
       <p className="pull-right">
-        <i className="fab fa-github" /> React Productions
+        <i className="fab fa-github" /> A React Production
         
       </p>
     </footer>

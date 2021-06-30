@@ -1,19 +1,18 @@
 
 import React from "react";
+import "./style.css";
 
 function Form({ q, handleInputChange, handleFormSubmit }) {
     return (
         <form>
             <div className="form-group">
-                <label htmlFor="Query">
-                    <strong>Book</strong>
-                </label>
-                <input
+                
+                <input 
                     className="form-control"
                     id="Title"
                     type="text"
                     value={q}
-                    placeholder="Enter Book title here"
+                    placeholder="Enter Book title here   "
                     name="q"
                     onChange={handleInputChange}
                     required
