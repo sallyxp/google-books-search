@@ -24,7 +24,7 @@ app.use(routes);
 // });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/google_book_search", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
