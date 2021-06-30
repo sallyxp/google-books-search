@@ -27,6 +27,9 @@ To run this application, the user must clone all the files from this repository.
 
  ## Usage
 
+ There are 3 pages: Home, Saved and noMatch.
+
+ 
  The user is first presented with the landing page above.  If data has already been added, then the Workout status will also be shown on this page.
 
 ![alt text](/ReadmeImages/LandingPagewithData.png) 
