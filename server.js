@@ -18,13 +18,13 @@ if (process.env.NODE_ENV === "production") {
 // Define API routes
 app.use(routes);
 
-// // wildcard handler for all pages
-// app.get("*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "./client/public/index.html"));
-// });
+// wildcard handler for all pages
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"));
+});
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/google_book_search", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
