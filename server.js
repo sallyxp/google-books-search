@@ -2,7 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
-const path = require("path");
+// const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -24,7 +24,7 @@ app.use(routes);
 // });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://sally:sally@cluster0.vofwz.mongodb.net/googlebooks", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
