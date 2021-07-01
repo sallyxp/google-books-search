@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
-import Wrapper from "../components/Wrapper"
+ import Wrapper from "../components/Wrapper";
 
 
 class Home extends Component {
@@ -67,7 +67,7 @@ class Home extends Component {
             <Row>
               <Col size="md-12">
                 <Jumbotron>
-                  <h1 className="text-center ">
+                  <h1 className="text-center">
                     <strong>Google Books Search using React!</strong>
                   </h1>
                   <h3 className="text-center">Search for any books and save your favourites!!</h3>

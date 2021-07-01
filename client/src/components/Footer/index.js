@@ -1,13 +1,14 @@
 import React from "react";
+import "./style.css";
 
 function Footer() {
   return (
     <footer>
       <hr />
-      <p className="pull-right">
+      <h4 className="pull-right">
         <i className="fab fa-github" /> A React Production
         
-      </p>
+      </h4>
     </footer>
   );
 }
