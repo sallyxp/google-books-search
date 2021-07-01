@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Google Books Search",
   "main": "server.js",
-
   "engines": {
     "node": "11.1.0",
     "npm": "6.14.10"
@@ -29,6 +28,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.12.14",
     "path": "^0.12.7",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3"
   }
 }
